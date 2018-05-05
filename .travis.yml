@@ -12,9 +12,9 @@ php:
 - 7.0
 
 env:
-  global:
+  matrix:
   - COMPOSER=composer-dev.json
-  # - PATH=$TRAVIS_BUILD_DIR/bin::$PATH
+  - COMPOSER=
 
 matrix:
   fast_finish: true
